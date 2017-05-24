@@ -1,1 +1,259 @@
 
+<html>
+<head>
+<title>ICON 2017: Jadavpur University, Kolkata & LTRC, IIIT, Hyderabad. Conference on NLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ICON-2017: The Fourteenth International Conference on Natural Language Processing (ICON-2017) will be held at Jadavpur University during December 18-21, 2017. The ICON Conference series is a forum for promoting interaction among researchers in the field of Natural Language Processing (NLP) and Computational Linguistics (CL) in India and abroad.">
+<link rel="stylesheet" href="../css/standard.css">
+<style>
+.red {
+color: #B71C1C;
+}
+#pagetitle, #container, .item {
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+#footer {
+	position: fixed;
+	bottom:0px;
+	right: 0px;
+	width: 77.25%;
+background: #003156;
+z-index: 999;
+padding: 5px;
+text-align: center;
+	color:white;
+	font-family: myriadl;
+}
+#container {
+	padding-bottom: 100px;
+}
+#logo {
+	max-height: 60px;
+	margin-right: 20px;
+	width: auto;
+	vertical-align: bottom;
+}
+.notification {
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	padding: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 2px solid #B71C1C;
+font-size: 0.9em;
+	width: 40%;
+	border-radius: 5px;
+}
+.highlight {
+	border: 1px solid #B71C1C;
+}
+.notification-main {
+	padding: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	border: 2px solid #B71C1C;
+	width: 80%;
+	border-radius: 5px;
+}
+.new {
+	background-color: #B71C1C;
+	position: absolute;
+	top: 5%;
+	left: -10%;
+	color: white;
+	font-family: myriadl;
+	font-size: 0.5em;
+	padding: 3px;
+
+
+}
+.item_link {
+	color: black;
+}
+</style>
+
+<script language="javascript">
+ScrollRate = 100;
+
+function scrollDiv_init() {
+	DivElmnt = document.getElementById('navigation');
+	ReachedMaxScroll = false;
+	
+	DivElmnt.scrollTop = 0;
+	PreviousScrollTop  = 0;
+	
+	ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+
+function scrollDiv() {
+	
+	if (!ReachedMaxScroll) {
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop++;
+		
+		ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+	}
+	else {
+		ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+		
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop--;
+	}
+}
+
+function pauseDiv() {
+	clearInterval(ScrollInterval);
+}
+
+function resumeDiv() {
+	PreviousScrollTop = DivElmnt.scrollTop;
+	ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
+}
+</script>
+
+</head>
+<body>
+<div id="header">
+	<div id="logo-hero"><span id="top" style="font-size: 1.6em;">JADAVPUR UNIVERSITY</span><br /><span id="bottom" style="font-size:0.7em;">WITH LTRC, IIIT-HYDERABAD<br />&nbsp;</span></div>
+	<div id="pagetitle">ICON 2017 : 14th International Conference on Natural Language Processing<br /><small style="font-size: 0.5em;">Jadavpur University, Kolkata, India
+</small></div>
+	<div id="navmob">
+<a href="#" id="menu-icon"></a>
+
+<ul>
+
+<li onclick="load('./home.php')">Home</li>
+	<li onclick="load('./applications.php')">Application</li>
+	<li onclick="load('./papersubmit.php')">Paper Submission</li>
+	<li onclick="load('./projectareas.php')">Project Areas</li>
+	<li onclick="load('./schedule.php')">Schedule</li>
+	<li onclick="load('./financial.php')">Financial Support</li>
+	<li onclick="load('./organizers.php')">Organisers</li>
+	<li onclick="load('./local.php')">Important Local Info</li>
+	<li onclick="load('./abouthyd.php')">About Hyderabad</li>
+	<li onclick="load('./venuemap.php')">Venue Map</li>
+	<li onclick="load('./faq.php')">FAQ</li>
+
+</ul>
+
+</div>
+</div>
+
+<div id="navigation" style="overflow : auto; font-size: 1em; padding: 2px" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
+	<span class="item selected" onclick="load('./home.php')">Home</span>
+	<!-- <a class="item_link" href="./icon2015_proceedings/index.html"><span class="item highlight"><span class="new">NEW</span>ICON-2015 Proceedings</span></a> -->
+	<!-- <a class="item_link" href="./icon2014_proceedings/index.html"><span class="item highlight"><span class="new">NEW</span>ICON-2014 Proceedings</span></a> -->
+	<!-- <span class="item highlight" onclick="load('./results.htm')">SMT Contest Results</span> -->
+	<span class="item" onclick="load('./venue.php')">Venue</span>
+	<span class="item " onclick="load('./schedule.php')">Schedule</span>
+	<span class="item " onclick="load('./proceedings.php')">Proceedings</span>
+	<span class="item highlight" onclick="window.location='./registration/'">Registration</span>
+	<span class="item" onclick="load('./accomodation.php')">Accommodation</span>
+	<span class="item " onclick="load('./camera_ready.php')">Camera Ready Instructions</span>
+	<!-- <span class="item highlight" onclick="load('./selected_tutorials.php')">Selected tutorials</span> -->
+	<!-- <span class="item highlight" onclick="load('./accepted_papers2.php')">Paper Acceptance 2</span> -->
+	<!-- <span class="item highlight" onclick="load('./accepted-tentative.php')">Accepted Papers</span> -->
+	<span class="item" onclick="load('./important_dates.php')">Important Dates</span>
+
+	<!-- <a href="./icon_accepted.pdf" style="color: black;"><span class="item">Accepted Papers</span></a> -->
+	<!--span class="item" onclick="load('./topics.php')">Topics</span-->
+
+	<span class="item" onclick="load('./invited-talks.php')">Keynote Lectures</span>
+	<span class="item" onclick="load('./workshops.php')">Tutorials/Workshops</span>
+	<span class="item highlight" onclick="load('./contests.php')">Contests</span>
+	<!--<span class="item highlight" onclick="load('./colocated.php')">Colocated Events</span>-->
+	<span class="item" onclick="load('./committee.php')">Committees</span>
+	<span class="item" onclick="load('./visa.php')">Visa</span>
+	<span class="item" onclick="load('./sponsors.php')">Sponsors</span>
+	<span class="item" onclick="load('./contact.php')">Contact Us</span>
+	<span><p>&nbsp;</p></span>
+	<span><p>&nbsp;</p></span>
+	<span><p>&nbsp;</p></span>
+	<span><p>&nbsp;</p></span>
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<span><p>&nbsp;</p></span>
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<span><p>&nbsp;</p></span>
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+	<!--span class="item" onclick="load('./about.php')">About</span-->
+
+
+</div>
+<div id="footer">
+<a href="http://mrinaldhar.com/" style="color:white;">Website designed by Mrinal Dhar</a> &bull; Maintained by Sriharsh Bhyravajjula
+</div>
+<div id="container">
+
+	</div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/jqueryui.js"></script>
+<script>
+	var newheight = $('#logo-hero').height();
+	$('#navigation').css({"top": newheight});
+	$('#container').css({"top" : newheight});
+	$('#navmob ul').css({"top": newheight+5});
+	load('./home.php');
+	function load(addr) {
+		$("#navmob").removeClass('active');
+
+		$(this).addClass('selected');
+		$('#container').fadeOut("fast", function() {
+			$.ajax({
+ 	 type: "GET",
+ 	 url: addr,
+	success:function(response){
+                    $('#container').html(response);
+                    $('#container').fadeIn();
+                },
+  });
+		});
+
+	
+	}
+	$('#navigation span').click(function() {
+		 $(this).addClass('selected').siblings().removeClass('selected');
+	});
+	var notif = window.setInterval(function() {
+	$('.notification').fadeOut(800, function() {
+	$(this).fadeIn(800, function() {});
+});
+}, 1600);
+$('.notification').mouseover(function() {
+window.clearInterval(notif);
+});
+</script>
+<!-- md -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67264116-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
+
