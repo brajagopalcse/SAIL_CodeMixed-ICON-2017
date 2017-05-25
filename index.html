@@ -1,195 +1,36 @@
-<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Surajit Dasgupta</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<body>
+<h1>NLP tools contests at ICON 2017</h1><br />
+<h1>SENTIMENT ANALYSIS FOR INDIAN LANGUAGES</h1><br />
   
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>India is a linguistic area with one of the longest histories of contact, influence, use, teaching and learning of English-in-diaspora in the world (Kachru and Nelson, 2006). Thus, a huge number of Indians active on the internet are able in English communication to some degree. India also enjoys huge diversity in language. Apart from Hindi, it has several regional languages that are the primary tongue of people native to the region. This is to the extent that social media including Facebook, WhatsApp, Twitter etc. contain more than one language, and such phenomena is called code-mixing and code-switching. On the other side, the evolution of sentiments from such social media texts have also created many new opportunities for information access and language technology, but also many new challenges, making it one of the prime present-day research areas.Sentiment analysis in code-mixed data has several real-life applications in opinion mining from social media campaign to feedback analysis. </p>
 
-  ga('create', 'UA-79727909-1', 'auto');
-  ga('send', 'pageview');
+<p>Linguistic processing of such social media dataset and its sentiment analysis is a difficult task.Till date, most of the experiments have been performed on identifying the languages (Bali et al., 2014; Das and Gamback, 2014), parts-of-speech tagging (Ghosh et al., 2016) etc. Few tasks also have been started on the sentiment analysis of code-mixeddata such as Hindi-English (Joshi et al., 2016). Therefore, we believe that it is the best place to bring more research attention towards developing language technologies for identifying sentiments from Indian social media texts.</p>
 
-</script>
-  
-  </head>
-  <body>
+<p>Main goal of this task is to identify the sentence level sentiment polarity of the code-mixed dataset of Indian languages pairs (Hi-En, Ben-Hi-En, xx-xx) collected from Twitter, Facebook, and WhatsApp.Each of the sentences is annotated with language information as well as polarity at sentence level. The participants will be provided development, training and test dataset.</p>
 
-    <!-- Sidebar -->
-      <section id="sidebar">
-        <div class="inner">
-          <nav>
-            <ul>
-              <li><a href="#intro">Welcome</a></li>
-              <li><a href="#one">Who I am</a></li>
-              <li><a href="#two">What I do</a></li>
-              <li><a href="#three">Get in touch</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
+<p>Each participating team will be allowed to submit two systems for each of the language pairs and the best result will be considered as final. The final evaluation will be performed based on the macro-averaged F1-measure. The python code for the evaluation will provided by the organizers. Initially, each of participating teams will have access to the development and training data. Later, the unlabeled test data will be provided and the teams have to submit the results within 24 hours. There will be no distinction between constrained and unconstrained systems, but the participants will be asked to report what additional resources they have used for each of their submitted runs.</p>
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+<h3>THE CONTEST</h3>
 
-        <!-- Intro -->
-          <section id="intro" class="wrapper style1 fullscreen fade-up">
-            <div class="inner">
-              <a href="http://linkedin.com/in/surajit-techie" target="_blank">
-                <img class="media-object" src="images/surajit.jpg">
-              </a>
-              <h1>Hi, I'm Surajit</h1>
-              <p class="lead">I'm a postgraduate student of computer science and engineering.</p>
-            </div>
-          </section>
+<p>The contest will have three prizes: </p>
+<p>FIRST PRIZE: Rs.10,000/- </p>
+<p>SECOND PRIZE: Rs.7,500/- </p>
+<p>THIRD PRIZE: Rs.5,000/- </p>
 
-        <!-- One -->
-          <section id="one" class="wrapper style2 spotlights">
-            <section>
-              <a href="#" class="image"><img src="images/deep-brain.png" alt="" data-position="center center" /></a>
-              <div class="content">
-                <div class="inner">
-                  <h2>Researcher</h2>
-                  <p class="lead">My research interests primarily focus on Machine Learning, Deep Learning and Artificial Intelligence. I am currently working on the application of Deep Learning on Natural Language Processing.</p>
-                </div>
-              </div>
-            </section>
-            <section>
-              <a href="#" class="image"><img src="images/ju-logo.gif" alt="" data-position="top center" /></a>
-              <div class="content">
-                <div class="inner">
-                  <h2>Postgraduate Student</h2>
-                  <p class="lead">I'm currently pursuing Master of Engineering in Computer Science and Engineering program at Jadavpur University, India. I'm concentrating in Natural Language Processing and Deep Learning. <a href="files/resume.pdf">Here</a> is my r&eacute;sum&eacute;.</p>
-                </div>
-              </div>
-            </section>
-            <section>
-              <a href="#" class="image"><img src="images/kolkata-victoria.png" alt="" data-position="25% 25%" /></a>
-              <div class="content">
-                <div class="inner">
-                  <h2>Kolkata Native</h2>
-                  <p class="lead">I was born in Kolkata and went to high school at DAV Public School, Rupnarayanpur. I graduated from Govt. College of Engineering and Ceramic Technology, Kolkata majoring in Computer Science and Engineering. I love my city and fully embrace the ecosystem.</p>
-                </div>
-              </div>
-            </section>
-          </section>
+<h2>Important Dates:</h2><br>
+Thu 8 June 2017: Development and Training Dataset available (<a href="https://docs.google.com/forms/d/1Z80aVWL3M3D-DaRNjydXbUMdnjEMQtCY0oCmh_scDTQ/prefill">Link</a>) <br />
+Thu 13 July 2017: Test Dataset available <br />
+Thu 13 July 2017: Evaluation phase starts <br />
+Fri 14 July 2017: Evaluation period ends (Jan 30, 23:59 IST) <br />
+Mon 07 Aug 2017: Results posted <br />
+Mon 17 Aug 2017: Paper submissions due <br />
+Fri 31 Aug 2017: Author notifications <br />
+Fri 17 Oct 2017: Camera ready submissions due <br />
 
-        <!-- Two -->
-          <section id="two" class="wrapper style3 fade-up">
-            <div class="inner">
-              <h2>What I do</h2>
-              <p class="lead">My mission is to simplify and solve a wide spectrum of problems by being creative in the approach and teaching myself in the process to come up with better, efficient solutions with time.</p>
-              <div class="features">
-                
-                <section>
-                  <span class="icon major fa-cogs"></span>
-                  <h3>Machine Learning</h3>
-                  <p>One of my interest areas, I'm interested in developing computationally efficient backpropagation algorithms.</p>
-                </section>
-                
-                <section>
-                  <span class="icon major fa-flask"></span>
-                  <h3>Deep Learning</h3>
-                  <p>I'm working on deep learning architectures and their application on computational linguistics.</p>
-                </section>
-                <section>
-                  <span class="icon major fa-diamond"></span>
-                  <h3>Natural Language Processing</h3>
-                  <p>I've been working on Natural Language Processing, figuring out inferential information and temporal relations in text, mainly via deep neural networks. </p>
-                </section>
-                <section>
-                  <span class="icon major fa-object-group"></span>
-                  <h3>Graphic Design</h3>
-                  <p>I love graphic designing and doing illustrations. Keenly interested in minimalism, flat design and typography.</p>
-                </section>
-              </div>
-            </div>
-          </section>
-
-        <!-- Three -->
-          <section id="three" class="wrapper style1 fade-up">
-            <div class="inner">
-              <h2>Get in touch</h2>
-              <p>Want to get in touch? I'd love to hear from you. Please drop me a line!</p>
-              <div class="split style1">
-                <section>
-                  <form action="https://formspree.io/surajit.techie@gmail.com" method="post">
-                    <div class="field half first">
-                      <label for="name">Name</label>
-                      <input type="text" name="name" id="name" />
-                    </div>
-                    <div class="field half">
-                      <label for="email">Email</label>
-                      <input type="text" name="_replyto" id="email" />
-                    </div>
-                    <div class="field">
-                      <label for="message">Message</label>
-                      <textarea name="message" id="message" rows="5"></textarea>
-                    </div>
-                    <input type="submit" value="Send" class="button submit">
-                  </form>
-                </section>
-                <section>
-                  <ul class="contact">
-                    <li>
-                      <h3>Address</h3>
-                      <span>706 (11/1) Prince Park <br />
-                      Purbachal Road, Kalikapur<br />
-                       Kolkata 700099, India</span>
-                    </li>
-                    <li>
-                      <h3>Email</h3>
-                      surajit [dot] techie [at] gmail [dot] com
-                    </li>
-                    <li>
-                      <h3>Phone</h3>
-                      <span>(91) 89614-05973</span>
-                    </li>
-                    <li>
-                      <h3>Social</h3>
-                      <ul class="icons">
-                        <li><a href="http://twitter.com/zephyrzilla" target="_blank" class="fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="http://facebook.com/surajit.techie" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="http://github.com/surajit-techie" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://instagram.com/zephyrzilla" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="http://linkedin.com/in/surajit.techie" target="_blank" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-            </div>
-          </section>
-      </div>
-
-    <!-- Footer -->
-      <footer id="footer" class="wrapper style1-alt">
-        <div class="inner">
-          <ul class="menu">
-            <li>&copy; Surajit Dasgupta. All rights reserved.</li>
-          </ul>
-        </div>
-      </footer>
-
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
-      <script src="assets/js/email.js"></script>
-
-  </body>
+<h2>Organizers:</h2>
+<b>Dipankar Das</b>, Jadavpur University, India (Chair) (dipankar.dipnil2005[at]gmail.com) <br />
+<b>Amitava Das</b>, IIIT-Sri City, India (amitava.santu[at]gmail.com) <br />
+<b>Braja Gopal Patra</b>, UTHealth, Houston, USA  (brajagopal.cse[at]gmail.com) <br />
+</body>
 </html>
-
