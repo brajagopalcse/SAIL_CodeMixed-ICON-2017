@@ -1,36 +1,253 @@
+<!DOCTYPE html>
 <html>
+<title>SAIL Code Mixed</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 <body>
-<h1>NLP tools contests at ICON 2017</h1><br />
-<h1>SENTIMENT ANALYSIS FOR INDIAN LANGUAGES</h1><br />
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card-2">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#date" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Important Dates</a>
+    <a href="#data" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Data and Tools</a>
+    <a href="#submission" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Submission</a>
+    <a href="#pc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Program Committee</a>
+    <a href="#registration" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registration</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-green w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+<a href="#date" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Important Dates</a>
+    <a href="#data" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Data and Tools</a>
+    <a href="#submission" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Submission</a>
+    <a href="#pc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Program Committee</a>
+    <a href="#registration" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registration</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="http://ltrc.iiit.ac.in/icon2017/img/logo.bmp" style="width:15%">
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="#">
+    <h2 class="w3-wide">Sentiment Analysis for Indian Languages (Code Mixed)</h2>
+    <p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>
+    <p class="w3-justify">India is a linguistic area with one of the longest histories of contact, influence, use, teaching and learning of English-in-diaspora in the world (Kachru and Nelson, 2006). Thus, a huge number of Indians active on the internet are able in English communication to some degree. India also enjoys huge diversity in language. Apart from Hindi, it has several regional languages that are the primary tongue of people native to the region. This is to the extent that social media including Facebook, WhatsApp, Twitter etc. contain more than one language, and such phenomena is called code-mixing and code-switching. On the other side, the evolution of sentiments from such social media texts have also created many new opportunities for information access and language technology, but also many new challenges, making it one of the prime present-day research areas.Sentiment analysis in code-mixed data has several real-life applications in opinion mining from social media campaign to feedback analysis. <br><br>
+
+	Linguistic processing of such social media dataset and its sentiment analysis is a difficult task.Till date, most of the experiments have been performed on identifying the languages (Bali et al., 2014; Das and Gamback, 2014), parts-of-speech tagging (Ghosh et al., 2016) etc. Few tasks also have been started on the sentiment analysis of code-mixeddata such as Hindi-English (Joshi et al., 2016).Therefore, we believe that it is the best place to bring more research attention towards developing language technologies for identifying sentiments from Indian social media texts.<br><br>
+
+	Main goal of this task is to identify the sentence level sentiment polarity of the code-mixed dataset of Indian languages pairs (Hi-En, Ben-Hi-En, xx-xx) collected from Twitter, Facebook, and WhatsApp.Each of the sentences is annotated with language information as well as polarity at sentence level. The participants will be provided development, training and test dataset.<br><br>
+
+	Each participating team will be allowed to submit two systems for each of the language pairs and the best result will be considered as final. The final evaluation will be performed based on the macro-averaged F1-measure. The python code for the evaluation will provided by the organizers.Initially, each of participating teams will have access to the development and training data. Later, the unlabeled test data will be provided and the teams have to submit the results within 24 hours. There will be no distinction between constrained and unconstrained systems, but the participants will be asked to report what additional resources they have used for each of their submitted runs. <br><br>
+
+  The contest will have three prizes: <br>
+
+  First Prize: Rs.10,000/- <br>
+  Second Prize: Rs.7,500/- <br>
+  Third Prize: Rs.5,000/- </p>
+    <!--<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>-->
+  </div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="date">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Important Dates</h2>
+      <!--<p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>-->
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">Registration Ends <span class="w3-tag w3-red w3-margin-left">June 6, 2017</span></li>
+        <li class="w3-padding">Training Data Ready <span class="w3-tag w3-red w3-margin-left">June 6, 2017</span></li>
+        <li class="w3-padding">Test Data Ready<span class="w3-badge w3-right w3-margin-right">June 6, 2017</span></li>
+        <li class="w3-padding">Evaluation Start<span class="w3-badge w3-right w3-margin-right">June 6, 2017</span></li>
+        <li class="w3-padding">Paper Submissions Due<span class="w3-badge w3-right w3-margin-right">June 6, 2017</span></li>
+        <li class="w3-padding">Author Notification<span class="w3-badge w3-right w3-margin-right">June 6, 2017</span></li>
+        <li class="w3-padding">Camera Ready Submission Due<span class="w3-badge w3-right w3-margin-right">June 6, 2017</span></li>
+      </ul>
+
+      <!--<div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>New York</b></p>
+            <p class="w3-opacity">Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Paris</b></p>
+            <p class="w3-opacity">Sat 28 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>San Francisco</b></p>
+            <p class="w3-opacity">Sun 29 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="data">
+    <h2 class="w3-wide">Data and Tools</h2>
+    <!--<p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>-->
+    <p class="w3-justify">Training data will be available after registration in the Registration Tab. We will notify about the evalution process and test data soon.</p>
+    <!--<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>-->
+  </div>
+<!-- The Tour Section -->
+  <div class="w3-black" id="submission">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Submission</h2>
+      <p class="w3-justify">Submission details will be posted soon.</p>      
+    </div>
+  </div>
+
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="pc">
+    <h2 class="w3-wide">Program Committee</h2>
+    <!--<p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>-->
+    <p class="w3-justify">XXX <br \>
+    XXX <br \>
+    XXX <br \>
+    </p>
+    <!--<div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>-->
+  </div>
+
+  <div class="w3-black" id="registration">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Registration</h2>
+      <p class="w3-justify">Please register your team details in this <a href="www.google.com">link</a>.</p>      
+    </div>
+  </div>
+
+    <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Contact</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i style="width:30px"></i> Dipankar Das<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Jadavpur University, Kolkata, India<br>
+        <!--<i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: dipankar.dipnil2005@gmail.com<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i style="width:30px"></i> Amitava Das<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>IIIT Sricity, Andhra Pradesh, India<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: amitava.santu@gmail.com<br>
+      </div>
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i style="width:30px"></i>Braja Gopal Patra<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> UTHeath, Houston, USA<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: brajagopal.cse@gmail.com<br>
+      </div>
+    </div>
+  </div>
   
-<p>India is a linguistic area with one of the longest histories of contact, influence, use, teaching and learning of English-in-diaspora in the world (Kachru and Nelson, 2006). Thus, a huge number of Indians active on the internet are able in English communication to some degree. India also enjoys huge diversity in language. Apart from Hindi, it has several regional languages that are the primary tongue of people native to the region. This is to the extent that social media including Facebook, WhatsApp, Twitter etc. contain more than one language, and such phenomena is called code-mixing and code-switching. On the other side, the evolution of sentiments from such social media texts have also created many new opportunities for information access and language technology, but also many new challenges, making it one of the prime present-day research areas.Sentiment analysis in code-mixed data has several real-life applications in opinion mining from social media campaign to feedback analysis. </p>
+<!-- End Page Content -->
+</div>
 
-<p>Linguistic processing of such social media dataset and its sentiment analysis is a difficult task.Till date, most of the experiments have been performed on identifying the languages (Bali et al., 2014; Das and Gamback, 2014), parts-of-speech tagging (Ghosh et al., 2016) etc. Few tasks also have been started on the sentiment analysis of code-mixeddata such as Hindi-English (Joshi et al., 2016). Therefore, we believe that it is the best place to bring more research attention towards developing language technologies for identifying sentiments from Indian social media texts.</p>
+<!-- Footer -->
+<footer class="w3-container w3-center w3-opacity w3-light-grey">
+  <p class="w3-medium">&copy;2017 All Rights Reserved by SAIL Committee.</p>
+</footer>
 
-<p>Main goal of this task is to identify the sentence level sentiment polarity of the code-mixed dataset of Indian languages pairs (Hi-En, Ben-Hi-En, xx-xx) collected from Twitter, Facebook, and WhatsApp.Each of the sentences is annotated with language information as well as polarity at sentence level. The participants will be provided development, training and test dataset.</p>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-<p>Each participating team will be allowed to submit two systems for each of the language pairs and the best result will be considered as final. The final evaluation will be performed based on the macro-averaged F1-measure. The python code for the evaluation will provided by the organizers. Initially, each of participating teams will have access to the development and training data. Later, the unlabeled test data will be provided and the teams have to submit the results within 24 hours. There will be no distinction between constrained and unconstrained systems, but the participants will be asked to report what additional resources they have used for each of their submitted runs.</p>
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
 
-<h3>THE CONTEST</h3>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
 
-<p>The contest will have three prizes: </p>
-<p>FIRST PRIZE: Rs.10,000/- </p>
-<p>SECOND PRIZE: Rs.7,500/- </p>
-<p>THIRD PRIZE: Rs.5,000/- </p>
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
-<h2>Important Dates:</h2><br>
-Thu 8 June 2017: Development and Training Dataset available (<a href="https://docs.google.com/forms/d/1Z80aVWL3M3D-DaRNjydXbUMdnjEMQtCY0oCmh_scDTQ/prefill">Link</a>) <br />
-Thu 13 July 2017: Test Dataset available <br />
-Thu 13 July 2017: Evaluation phase starts <br />
-Fri 14 July 2017: Evaluation period ends (Jan 30, 23:59 IST) <br />
-Mon 07 Aug 2017: Results posted <br />
-Mon 17 Aug 2017: Paper submissions due <br />
-Fri 31 Aug 2017: Author notifications <br />
-Fri 17 Oct 2017: Camera ready submissions due <br />
-
-<h2>Organizers:</h2>
-<b>Dipankar Das</b>, Jadavpur University, India (Chair) (dipankar.dipnil2005[at]gmail.com) <br />
-<b>Amitava Das</b>, IIIT-Sri City, India (amitava.santu[at]gmail.com) <br />
-<b>Braja Gopal Patra</b>, UTHealth, Houston, USA  (brajagopal.cse[at]gmail.com) <br />
 </body>
 </html>
