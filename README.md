@@ -1,3 +1,3 @@
-NLP tools contests at ICON 2017
+Sentiment Analysis for Indian Languages (Code Mixed)
 
-SENTIMENT ANALYSIS FOR INDIAN LANGUAGES
+NLP Tool Contest @ICON-2017, Jadavpur University
