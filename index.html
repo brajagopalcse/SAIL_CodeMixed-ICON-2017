@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>SAIL Code Mixed</title>
@@ -18,10 +19,11 @@ body {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
     <a href="#date" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Important Dates</a>
-    <a href="#data" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registration</a>
+    <a href="#registration" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Registration</a>
     <a href="#submission" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Submission</a>
     <!--<a href="#pc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Program Committee</a>-->
-    <a href="#registration" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reference</a>
+    <a href="#reference" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Reference</a>
+    <a href="#oc" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Organizing Committee</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
   </div>
 </div>
@@ -47,14 +49,14 @@ body {font-family: "Lato", sans-serif}
   <!-- The Band Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="#">
     <h2 class="w3-wide">Sentiment Analysis for Indian Languages (Code Mixed)</h2>
-    <p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>
-    <p class="w3-justify">India is a linguistic area with one of the longest histories of contact, influence, use, teaching and learning of English-in-diaspora in the world (Kachru and Nelson, 2006). Thus, a huge number of Indians active on the internet are able in English communication to some degree. India also enjoys huge diversity in language. Apart from Hindi, it has several regional languages that are the primary tongue of people native to the region. This is to the extent that social media including Facebook, WhatsApp, Twitter etc. contain more than one language, and such phenomena is called code-mixing and code-switching. On the other side, the evolution of sentiments from such social media texts have also created many new opportunities for information access and language technology, but also many new challenges, making it one of the prime present-day research areas. Sentiment analysis in code-mixed data has several real-life applications in opinion mining from social media campaign to feedback analysis. <br><br>
+    <p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavpur University</i></p>
+    <p class="w3-justify">India is a linguistic area with one of the longest histories of contact, influence, use, teaching and learning of English-in-diaspora in the world (Kachru and Nelson, 2006). Thus, a huge number of Indians active on the internet are able in English communication to some degree. India also enjoys huge diversity in language. Apart from Hindi, it has several regional languages that are the primary tongue of people native to the region. This is to the extent that social media including Facebook, WhatsApp, Twitter, etc. contain more than one language, and such phenomena are called code-mixing and code-switching. On the other side, the evolution of sentiments from such social media texts have also created many new opportunities for information access and language technology, but also many new challenges, making it one of the prime present-day research areas. Sentiment analysis in code-mixed data has several real-life applications in opinion mining from social media campaign to feedback analysis. <br><br>
 
-	Linguistic processing of such social media dataset and its sentiment analysis is a difficult task. Till date, most of the experiments have been performed on identifying the languages (Bali et al., 2014; Das and Gamback, 2014), parts-of-speech tagging (Ghosh et al., 2016) etc. Few tasks also have been started on the sentiment analysis of code-mixeddata such as Hindi-English (Joshi et al., 2016). Therefore, we believe that it is the best place to bring more research attention towards developing language technologies for identifying sentiments from Indian social media texts.<br><br>
+	Linguistic processing of such social media dataset and its sentiment analysis is a difficult task. Till date, most of the experiments have been performed on identifying the languages (Bali et al., 2014; Das and Gamback, 2014), parts-of-speech tagging (Ghosh et al., 2016), etc. Few tasks also have been started on the sentiment analysis of code-mixed data such as Hindi-English (Joshi et al., 2016). Therefore, we believe that it is the best place to bring more research attention towards developing language technologies for identifying sentiments from Indian social media texts.<br><br>
 
-	Main goal of this task is to identify the sentence level sentiment polarity of the code-mixed dataset of Indian languages pairs (Hi-En, Ben-Hi-En) collected from Twitter, Facebook, and WhatsApp. Each of the sentences is annotated with language information as well as polarity at sentence level. The participants will be provided development, training and test dataset.<br><br>
+	Main goal of this task is to identify the sentence level sentiment polarity of the code-mixed dataset of Indian languages pairs (Hi-En, Ben-Hi-En) collected from Twitter, Facebook, and WhatsApp. Each of the sentences is annotated with language information as well as polarity at the sentence level. The participants will be provided development, training and test dataset.<br><br>
 
-	Each participating team will be allowed to submit two systems for each of the language pairs and the best result will be considered as final. The final evaluation will be performed based on the macro-averaged F1-measure. The python code for the evaluation will provided by the organizers. Initially, each of participating teams will have access to the development and training data. Later, the unlabeled test data will be provided and the teams have to submit the results within 24 hours. There will be no distinction between constrained and unconstrained systems, but the participants will be asked to report what additional resources they have used for each of their submitted runs. <br><br>
+	Each participating team will be allowed to submit two systems for each of the language pairs, and the best result will be considered as final. The final evaluation will be performed based on the macro-averaged F1-measure. The python code for the evaluation will be provided by the organizers. Initially, each of participating teams will have access to the development and training data. Later, the unlabeled test data will be provided, and the teams have to submit the results within 24 hours. There will be no distinction between constrained and unconstrained systems, but the participants will be asked to report what additional resources they have used for each of their submitted runs. <br><br>
 
   The contest will have three prizes: <br>
 
@@ -85,7 +87,7 @@ body {font-family: "Lato", sans-serif}
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
         <li class="w3-padding">Registration Ends <span class="w3-tag w3-red w3-margin-left">Aug 7, 2017</span></li>
-        <li class="w3-padding">Training Data Ready <span class="w3-tag w3-red w3-margin-left">Aug 10, 2017</span></li>
+        <li class="w3-padding">Training Data Released <span class="w3-tag w3-red w3-margin-left">Aug 10, 2017</span></li>
         <li class="w3-padding">Test Data Ready <span class="w3-badge w3-right w3-margin-right">Sep 28, 2017</span></li>
         <li class="w3-padding">Submit Run <span class="w3-right w3-margin-right"><font color="black">Within 24 hours of the test data receive</font></span></li>
         <li class="w3-padding">Result Announcement <span class="w3-badge w3-right w3-margin-right">Oct 3, 2017</span></li>
@@ -126,10 +128,11 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="data">
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="registration">
     <h2 class="w3-wide">Registration</h2>
     <!--<p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>-->
-    <p class="w3-justify">Please fill up this form: <a href="www.google.com">Link</a> to express your interest in taking part in this contest. Due to pravacy policies of Facebook and WhatsApp we will not be able to release the data publicly. Once you submit the form please write to me: <a href="mailto:dipankar.dipnil2005@gmail.com?Subject=REQUEST FOR ICON 2017 TOOL CONTEST DATA %20&body=LANGUAGE PAIR: <Please mention Hindi-English/Bengali-Hindi-English or one of them you are requesting for>%0D%0AINSTITUTE:%20%0D%0ATEAM NAME:%20%0D%0ACONTACT PERSON:%20%0D%0A" target="_blank">Request for the Data</a>.</p>
+    <p class="w3-justify">Please fill up this <a href="https://docs.google.com/forms/d/e/1FAIpQLSfND9qpB14jpRC820q9J8v4QTPIayBZec6EilUHSUd1MgmHdA/viewform?usp=sf_link" style="color: #cc0000">form</a> to express your interest in taking part in this contest. Due to privacy policies of Facebook and WhatsApp, we will not be able to release the data publicly. You need to fillup the <a href="./NLPToolsContest@ICONdatacopyrightform.pdf" style="color: #cc0000">copyright form</a> and send it to <font color="#cc0000">dipankar{DOT}dipnil2005{AT}gmail{DOT}com</font>. Please mention "Copyright Form for NLP Tool Contest" in the subject line. The request must contain preferred data pair(Hindi-English or Bengali-English or both).</p>
+<p class="w3-justify"> Please join SAIL google group (<font color="#cc0000">sail_icon2017@googlegroups.com</font>) for discussion.</p>
     <!--<div class="w3-row w3-padding-32">
       <div class="w3-third">
         <p>Name</p>
@@ -155,7 +158,7 @@ body {font-family: "Lato", sans-serif}
 
   <!--<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="pc">
     <h2 class="w3-wide">Program Committee</h2>
-    <p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavur University</i></p>
+    <p class="w3-opacity"><i>NLP Tool Contest @ICON-2017, Jadavpur University</i></p>
     <p class="w3-justify">XXX <br \>
     XXX <br \>
     XXX <br \>
@@ -178,30 +181,79 @@ body {font-family: "Lato", sans-serif}
 
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="reference">
       <h2 class="w3-wide w3-center">Reference</h2>
-      <p class="w3-justify">Give some ref here</p>      
+      <p class="w3-justify">
+	Bali, K., Sharma, J., Choudhury, M., and Vyas, Y. (2014). “i am borrowing ya mixing?" an analysis of english-hindi code mixing in facebook. In Proceedings of the First Workshop on Computational Approaches to Code Switching,
+pages 116-126. <br \><br \>
+
+Das, A. and Gamback, B. (2014). Identifying languages at the word level in code-mixed Indian social media text. In Proceedings of the 11th International Conference on Natural Language Processing, Goa, India, pages 169-178. <br \> <br \>
+
+Ghosh, S, Ghosh, S. and Das, D.  (2016). Part-of-speech Tagging of Code-Mixed Social Media Text. In Proceedings of the Second Workshop on Computational Approaches to Code Switching, EMNLP, pages 90–97. <br \><br \>
+
+Joshi, A., Prabhu, A., Shrivastava, M., and Varma, V. (2016). Towards subword level compositions for sentiment analysis of hindi-english code mixed text. In Proceedings of the 26th International Conference on Computational Linguistics (COLING-2016), pages 2482-2491.<br \><br \>
+
+Kachru, Yamuna and Nelson, Cecil L. (2006). World Englishes in Asian Contexts. Hong Kong University Press. <br \>
+
+      </p>      
     </div>
   </div>
 
-    <!-- The Contact Section -->
- <div class="w3-teal" id="contact">
+  <!-- Organizing Committee -->
+ <div class="w3-teal" id="oc">
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-    <h2 class="w3-wide w3-center">Contact</h2>
+    <h2 class="w3-wide">Organizing Committee</h2>
     <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Dipankar Das &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+      <i class="fa fa-map-marker" style="width:30px"></i> Jadavpur University, Kolkata, India<br>
+      </div>
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Amitava Das &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+      <i class="fa fa-map-marker" style="width:30px"></i>IIIT Sricity, Andhra Pradesh, India<br>
+      </div>
+      
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Braja Gopal Patra &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp; 
+      <i class="fa fa-map-marker" style="width:30px"></i> UTHealth, Houston, USA<br>
+      </div>
+    </div>
+    <h2 class="w3-wide">Co-Organizer</h2>
+    <div class="w3-row w3-padding-32"> 
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Koustav Rudra &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <i class="fa fa-map-marker" style="width:30px"></i> IIT Kharagpur, West Bengal, India<br>
+      </div>
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Upendra Kumar &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      <i class="fa fa-map-marker" style="width:30px"></i>IIIT Sricity, Andhra Pradesh, India<br>
+      </div>
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+      <i style="width:30px"></i>Sainik Kumar Mahata &emsp;&emsp;&emsp;&emsp;
+      <i class="fa fa-map-marker" style="width:30px"></i> Jadavpur University, Kolkata, India<br>
+      </div>
+    </div>
+  </div>
+ </div>
+
+    <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+    <h2 class="w3-wide">Contact</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-row m6 w3-large w3-margin-bottom">
         <i style="width:30px"></i> Dipankar Das<br>
-        <i class="fa fa-map-marker" style="width:30px"></i> Jadavpur University, Kolkata, India<br>
-        <!--<i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br> -->
-        <i class="fa fa-envelope" style="width:30px"> </i> dipankar{DOT}dipnil2005{AT}gmail{DOT} com<br>
+        <!--<i class="fa fa-map-marker" style="width:30px"></i> Jadavpur University, Kolkata, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope" style="width:20px"> </i> dipankar{DOT}dipnil2005{AT}gmail{DOT}com<br>
       </div>
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i style="width:30px"></i> Amitava Das<br>
-        <i class="fa fa-map-marker" style="width:30px"></i>IIIT Sricity, Andhra Pradesh, India<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> amitava{DOT}das{AT}iiits{DOT}in<br>
+      <div class="w3-row m6 w3-large w3-margin-bottom">
+        <i style="width:30px"></i>Amitava Das<br>
+        <!--<i class="fa fa-map-marker" style="width:30px"></i>IIIT Sricity, Andhra Pradesh, India<br> -->
+        <i class="fa fa-envelope" style="width:20px"> </i> amitava{DOT}das{AT}iiits{DOT}in<br>
       </div>
-      <div class="w3-col m6 w3-large w3-margin-bottom">
+      <div class="w3-row m6 w3-large w3-margin-bottom">
         <i style="width:30px"></i>Braja Gopal Patra<br>
-        <i class="fa fa-map-marker" style="width:30px"></i> UTHeath, Houston, USA<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> brajagopal{DOT}cse{AT}gmail{DOT}com<br>
+        <!--<i class="fa fa-map-marker" style="width:30px"></i> UTHealth, Houston, USA<br> -->
+        <i class="fa fa-envelope" style="width:20px"> </i> brajagopal{DOT}cse{AT}gmail{DOT}com<br>
       </div>
     </div>
   </div>
