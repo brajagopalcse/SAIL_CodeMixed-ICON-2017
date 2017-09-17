@@ -5,73 +5,87 @@ Script to validate the labelled test dataset for the SAIL (Codemixed) 2017 share
 
 This script requires the original unlabelled file provided by the organizers.
 
-If your system is unable to predict sentiment of a sentence, then tag 'NA' in case of sentiment. 
+If your system is unable to predict sentiment of a sentence, then tag -2 in case of sentiment. 
 
 To run:
-python original_unlablled_dataset.json labelled_dataset.json
+python validateSAIL.py gold.json gold.json
 """
 
 import sys, codecs, json
 
-sentiment = [0, 1, -1]
+sentiment = [0, 1, -1, -2]
 
-def validate(original_file, labelled_file):
-  original_data, labelled_data = [], []
-  with codecs.open(original_file) as f:
+def validate(gold_file, pred_file):
+  gold_data, pred_data = [], []
+  with codecs.open(gold_file) as f:
     try:
-      original_data = json.load(f)
-    except error:
-      print(error)
+      gold_data = json.load(f)
+    except Exception as e:
+    	print(e)
     f.close()
-  with codecs.open(labelled_file) as f:
+  with codecs.open(pred_file) as f:
     try:
-      labelled_data = json.load(f)
-    except error:
-      print(error)
+      pred_data = json.load(f)
+    except Exception as e:
+      print(e)
     f.close()
-  if len(original_data) > len(labelled_data):
-    print('There are less items in labelled data')
+  if len(gold_data) > len(pred_data):
+    print('There are less items in predicted file')
     sys.exit()
-  elif len(original_data) < len(labelled_data):
-    print('There are more items in labelled data')
+  elif len(gold_data) < len(pred_data):
+    print('There are more items in predicted file')
     sys.exit()
-  for i in range(len(original_data)):
-    orginal_sentence = original_data[i]
-    labelled_sentence = labelled_data[i]
-    original_id = orginal_sentence['id']
-    labelled_id = labelled_sentence['id']
-    if not original_id == labelled_id:
-      print('ID miss match: original ID = {} and labelled ID = {}'.format(original_id, labelled_id))
+
+  for gold_item, pred_item in zip(gold_data, pred_data):
+    gold_id = gold_item['id']
+    pred_id = pred_item['id']
+    if not gold_id == pred_id:
+      print('ID miss match: gold sentence ID = {} and predicted sentence ID = {}'.format(gold_id, pred_id))
       sys.exit()
-    elif not orginal_sentence['text'] == labelled_sentence['text']:
-      print('Text miss match at ID = {}'.format(original_id))
+
+    gold_text, pred_text = '', ''
+    gold_tagged_text, pred_tagged_text = '', ''
+    pred_sentiment = ''
+    try:
+      gold_sent = gold_item['text']
+      gold_tagged_sent = gold_item['lang_tagged_text']
+
+      pred_sent = pred_item['text']
+      pred_tagged_sent = pred_item['lang_tagged_text']
+      pred_sentiment = pred_item['sentiment']
+    except Exception as e:
+      print(e)
       sys.exit()
-    elif not original_sentence['lang_tagged_text'] == labelled_sentence['lang_tagged_text']:
-      print('Language tagged text miss match at ID = {}'.format(original_id))
+    if not gold_sent == pred_sent:
+      print('Text miss match at ID = {}'.format(gold_id))
       sys.exit()
-    elif not labelled_sentence['sentiment'] in sentiment:
-      if not labelled_sentence['sentiment'] == 'NA':
-        print('Sentiment tag is different at ID = {}. It should be one of the 0, 1, -1 or NA.'.format(original_id))
+    elif not gold_tagged_sent == pred_tagged_sent:
+      print('Language tagged text miss match at ID = {}'.format(gold_id))
+      sys.exit()
+    elif not pred_sentiment in sentiment:
+      print('Sentiment tag is different at ID = {}. It should be one of the 0, 1, -1 or -2.'.format(gold_id))
+      sys.exit()
+  print('Validation done')
 
 
 
 if __name__ == '__main__':
   if len(sys.argv) < 3 :
     print('Give two input files')
-    print('Format should be: python original_unlablled_test.json labelled_test.json')
+    print('Format should be: python validateSAIL.py gold.json pred.json')
     sys.exit()
   elif len(sys.argv) > 3 :
     print('Input should not be more than two')
-    print('Format should be: python original_unlablled_test.json labelled_test.json')
+    print('Format should be: python validateSAIL.py gold.json pred.json')
     sys.exit()
   else:
-    original_file = sys.argv[1]
-    labelled_file = sys.argv[2]
-    if(not original_file.endswith('.json')):
+    gold_file = sys.argv[1]
+    pred_file = sys.argv[2]
+    if not gold_file.endswith('.json'):
       print('original file format should be .json')
       sys.exit()
-    elif(not labelled_file.endswith('.json')):
+    elif not pred_file.endswith('.json'):
       print('labelled file format should be .json')
       sys.exit()
     else:
-      validate(original_file, labelled_file)
+      validate(gold_file, pred_file)
