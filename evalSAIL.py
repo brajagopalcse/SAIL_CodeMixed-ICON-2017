@@ -77,28 +77,26 @@ if __name__ == '__main__':
   p = metrics.precision_score(gold_labels, pred_labels, average='macro')
   r = metrics.recall_score(gold_labels, pred_labels, average='macro')
   f = metrics.f1_score(gold_labels, pred_labels, average='macro')
-  print('Overall precision = {}, recall = {}, and f-score = {}'.format(p, r, f))
+  print('Overall \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
 
   # for positive sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, 1)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Positive precision = {}, recall = {}, and f-score = {}'.format(p, r, f))
+  print('Positive \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
 
   # for negative sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, -1)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Negative precision = {}, recall = {}, and f-score = {}'.format(p, r, f))
+  print('Negative \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
   
   # for neutral sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, 0)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Neural precision = {}, recall = {}, and f-score = {}'.format(p,r,f))
-
-  #print('urgent: \tP R F:\t{:.3f} \t{:.3f} \t{:.3f}'.format(urgentP, urgentR, urgentF))'''
+  print('Neutral \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
 

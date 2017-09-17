@@ -65,7 +65,7 @@ def validate(gold_file, pred_file):
     elif not pred_sentiment in sentiment:
       print('Sentiment tag is different at ID = {}. It should be one of the 0, 1, -1 or -2.'.format(gold_id))
       sys.exit()
-  print('Validation done')
+  print('Validation done. Files are ready to submit.')
 
 
 
