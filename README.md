@@ -1,15 +1,15 @@
-Sentiment Analysis for Indian Languages (Code Mixed)
-NLP Tool Contest @ICON-2017, Jadavpur University
+**Sentiment Analysis for Indian Languages (Code Mixed)**
+_NLP Tool Contest @ICON-2017, Jadavpur University_
 
-This repository contains the validation and evaluation scripts for the SAIL Code Mixed shared task. 
+This repository contains the validation and evaluation scripts for the **SAIL Code Mixed** shared task. 
 
-To run validateSAIL.py:
-python validateSAIL.py gold.json predicted.json
+**To run validateSAIL.py:**
+_python validateSAIL.py gold.json predicted.json_
 
 
-To run evalSAIL.py:
-python evalSAIL.py gold.json predicted.json
+**To run evalSAIL.py:**
+_python evalSAIL.py gold.json predicted.json_
 
 
 Need more info? 
-Contact: brajagopal[dot]cse[at]gmail[dot]com
+**Contact:** _brajagopal[dot]cse[at]gmail[dot]com_
