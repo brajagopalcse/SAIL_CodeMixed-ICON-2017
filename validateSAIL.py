@@ -8,7 +8,7 @@ This script requires the original unlabelled file provided by the organizers.
 If your system is unable to predict sentiment of a sentence, then tag -2 in case of sentiment. 
 
 To run:
-python validateSAIL.py gold.json gold.json
+python validateSAIL.py gold.json predicted.json
 """
 
 import sys, codecs, json

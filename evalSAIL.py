@@ -8,7 +8,7 @@ This script requires the gold annotated file provided by the organizers.
 If your system is unable to predict sentiment of a sentence, then tag 'NA' in case of sentiment. 
 
 To run:
-python evalSAIL.py gold_dataset.json predicted_dataset.json
+python evalSAIL.py gold.json predicted.json
 
 This script provides a few metrics. Official score is macro-averaged F-score across all the classes.
 """
