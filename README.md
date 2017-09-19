@@ -1,4 +1,4 @@
-**Sentiment Analysis for Indian Languages (Code Mixed)**
+**```Sentiment Analysis for Indian Languages (Code Mixed)```**
 
    -_NLP Tool Contest @ICON-2017, Jadavpur University_
 
@@ -21,4 +21,5 @@ This repository contains the validation and evaluation scripts for the **[SAIL C
 
 
 Need more info?
+
 **Contact:** _brajagopal[dot]cse[at]gmail[dot]com_
