@@ -7,11 +7,11 @@ This repository contains the validation and evaluation scripts for the **[SAIL C
 
 
 **To run [validateSAIL.py](./validateSAIL.py):**
-'''_python validateSAIL.py gold.json predicted.json_'''
+```_python validateSAIL.py gold.json predicted.json_```
 
 
 **To run [evalSAIL.py](./evalSAIL.py):**
-'''_python evalSAIL.py gold.json predicted.json_'''
+```_python evalSAIL.py gold.json predicted.json_```
 
 
 Need more info?
