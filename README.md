@@ -4,12 +4,12 @@ _NLP Tool Contest @ICON-2017, Jadavpur University_
 
 This repository contains the validation and evaluation scripts for the **[SAIL Code Mixed](https://brajagopalcse.github.io/SAIL_CodeMixed-ICON-2017/)** shared task. 
 
-**To run [validateSAIL.py](docs/validateSAIL.py):**
+**To run [validateSAIL.py](master/validateSAIL.py):**
 
 -_python validateSAIL.py gold.json predicted.json_
 
 
-**To run [evalSAIL.py](docs/evalSAIL.py):**
+**To run [evalSAIL.py](master/evalSAIL.py):**
 
 -_python evalSAIL.py gold.json predicted.json_
 
