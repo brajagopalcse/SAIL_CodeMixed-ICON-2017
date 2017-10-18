@@ -15,6 +15,7 @@ This script provides a few metrics. Official score is macro-averaged F-score acr
 
 import sys, codecs, json
 from sklearn import metrics
+from sklearn.metrics import precision_recall_fscore_support
 
 
 
@@ -22,9 +23,13 @@ def get_labels(gold_labels, predicted_labels, class_item):
   gold_class_labels, pred_class_labels = [], []
   for gold, pred in zip(gold_labels, predicted_labels):
     if not gold == class_item:
-      continue
-    gold_class_labels.append(gold)
-    pred_class_labels.append(pred)
+      gold_class_labels.append(-2)
+    else:
+      gold_class_labels.append(gold)
+    if not pred == class_item:
+      pred_class_labels.append(-2)
+    else:
+      pred_class_labels.append(pred)
   #print(gold_class_labels)
   return gold_class_labels, pred_class_labels
 
@@ -73,30 +78,34 @@ if __name__ == '__main__':
       sys.exit()
     else:
       gold_labels, pred_labels = get_all_labels(gold_file, pred_file)
+  
 
   p = metrics.precision_score(gold_labels, pred_labels, average='macro')
   r = metrics.recall_score(gold_labels, pred_labels, average='macro')
   f = metrics.f1_score(gold_labels, pred_labels, average='macro')
-  print('Overall \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
+
+  #print(precision_recall_fscore_support(gold_labels, pred_labels, average='macro'))
+
+  print('Overall \t precision, recall, and f-score = {:.3f}\t{:.3f}\t{:.3f}'.format(p, r, f))
 
   # for positive sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, 1)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Positive \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
+  print('Positive \t precision, recall, and f-score = {:.3f}\t{:.3f}\t{:.3f}'.format(p, r, f))
 
   # for negative sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, -1)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Negative \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
+  print('Negative \t precision, recall, and f-score = {:.3f}\t{:.3f}\t{:.3f}'.format(p, r, f))
   
   # for neutral sentiment
   gold, predicted = get_labels(gold_labels, pred_labels, 0)
   p = metrics.precision_score(gold, predicted, average='macro')
   r = metrics.recall_score(gold, predicted, average='macro')
   f = metrics.f1_score(gold, predicted, average='macro')
-  print('Neutral \t precision, recall, and f-score = {:.3f} \t{:.3f} \t{:.3f}'.format(p, r, f))
+  print('Neutral \t precision, recall, and f-score = {:.3f}\t{:.3f}\t{:.3f}'.format(p, r, f))
 
